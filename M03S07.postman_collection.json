@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "a1b8f06c-0c59-4417-ad68-7218eda6afd0",
+		"name": "M03S07",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28099412"
+	},
+	"item": [
+		{
+			"name": "Cadastra médico",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Silva\",\r\n    \"email\": \"silva@email.com\",\r\n    \"telefone\": \"(01) 9 8765-4321\",\r\n    \"crm\": \"13.826/MG\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/medico",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar médicos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Silva\",\r\n    \"email\": \"silva@email.com\",\r\n    \"telefone\": \"(01) 9 8765-4321\",\r\n    \"crm\": \"13.826/MG\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/medicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar médico",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Silva da Silva\",\r\n    \"email\": \"silva_da_silva@email.com\",\r\n    \"telefone\": \"(01) 9 8765-4321\",\r\n    \"crm\": \"13.826/MG\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/medico/33a2dcf9-bd26-4ff7-a604-1e9f9177d627",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medico",
+						"33a2dcf9-bd26-4ff7-a604-1e9f9177d627"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exclui médico",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Silva da Silva\",\r\n    \"email\": \"silva_da_silva@email.com\",\r\n    \"telefone\": \"(01) 9 8765-4321\",\r\n    \"crm\": \"13.826/MG\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/medico/33a2dcf9-bd26-4ff7-a604-1e9f9177d627",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medico",
+						"33a2dcf9-bd26-4ff7-a604-1e9f9177d627"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
