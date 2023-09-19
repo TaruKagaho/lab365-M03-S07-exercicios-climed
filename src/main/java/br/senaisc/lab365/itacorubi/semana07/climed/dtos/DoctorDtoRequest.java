@@ -1,7 +1,5 @@
 package br.senaisc.lab365.itacorubi.semana07.climed.dtos;
 
-import br.senaisc.lab365.itacorubi.semana07.climed.annotations.ValidUuid;
-import br.senaisc.lab365.itacorubi.semana07.climed.models.DoctorModel;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
