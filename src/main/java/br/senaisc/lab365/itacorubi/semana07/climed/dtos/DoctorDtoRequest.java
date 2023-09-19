@@ -1,17 +1,14 @@
 package br.senaisc.lab365.itacorubi.semana07.climed.dtos;
 
 import br.senaisc.lab365.itacorubi.semana07.climed.annotations.ValidUuid;
-
 import br.senaisc.lab365.itacorubi.semana07.climed.models.DoctorModel;
-import jakarta.validation.constraints.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 import java.util.UUID;
 
-public record DoctorDtoResponse(
-        @NotBlank(message = "O campo nome é obrigatório!")
-        @ValidUuid
-        UUID id,
-
+public record DoctorDtoRequest(
         @NotBlank(message = "O campo nome é obrigatório!")
         String nome,
 
@@ -26,13 +23,12 @@ public record DoctorDtoResponse(
         @NotBlank(message = "O campo cpf é obrigatório!")
         String crm
 ) {
-        public DoctorDtoResponse(DoctorModel doctorModel) {
+        /*public DoctorDtoRequest(DoctorModel doctorModel) {
                 this(
-                        doctorModel.getId(),
                         doctorModel.getNome(),
                         doctorModel.getEmail(),
                         doctorModel.getTelefone(),
                         doctorModel.getCrm()
                 );
-        }
+        }*/
 }
